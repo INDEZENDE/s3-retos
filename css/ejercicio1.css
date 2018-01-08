@@ -3,26 +3,26 @@
   margin: 0;
   padding: 0;
 }
-
+ /*Inician características de grid*/
 body {
-  width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .row:before, .row:after {
+  clear: both;
   content: "";
   display: table;
-  clear: both;
 }
 
 [class*="col-"] {
   float: left;
+  margin: 0px;
   min-height: 70px;
   padding: 12px;
-  margin: 0px;
-}
 
+}
 
 .col-1 {
   width: 8.3333%;
@@ -72,55 +72,55 @@ body {
   width: 100%;
 }
 
-
-
-@media  (max-width: 400px) {
+ /*Inician características del media para los tres casos*/
+@media  (max-width: 400px) {  /*Caso 1. la panttalla es de una dimensión máxima de 400px*/
   .container {
     background-image: url("../assets/images/back1.png");
-    width: 100%;
     background-size: 100% 100%;
-    height: 100vh;
+    height: 100vh;/*Elimina el espacio en blanco que queda debajo y lo ajusta con la propia imagen*/
+    width: 100%;
   }
 
-
-     .cat1 {
-
-        content: url("../assets/images/cat1.png");
-        margin-top: 280px;
-        margin-left: 50px;
-        height: 50%;
-        width: 50%;
-
-        }
+  .cat1 {
+    content: url("../assets/images/cat1.png");
+    height: 50%;
+    margin-left: 30%;
+    margin-top: 70%;
+    width: 70%;
+    }
 }
 
-@media   (max-width: 899px) and (min-width: 401px){
+@media   (max-width: 899px) and (min-width: 401px){/*Caso 2. la panttalla es de una dimensión máxima de 899 y mínima de 401*/
 
   .container {
     background-image: url("../assets/images/back2.png");
-    width: 100%;
     background-size: 100% 100%;
     height: 100vh;
+    width: 100%;
   }
 
-     .cat1 {
-        content: url("../assets/images/cat2.png");
-        height: 30%;
-        width: 20%;
-        }
+  .cat1 {
+    content: url("../assets/images/cat3.png");
+    height: 50%;
+    margin-left: 30%;
+    margin-top: 30%;
+    width: 50%;
+    }
   }
 
-@media  (min-width: 900px) {
+@media  (min-width: 900px) {/*Caso 3. la panttalla es de una dimensión ,ínima de 900px*/
 
   .container {
     background-image: url("../assets/images/back3.png");
-    width: 100%;
     background-size: 100% 100%;
-      height: 100vh;
+    height: 100vh;
+    width: 100%;
   }
-     .cat1 {
-        content: url("../assets/images/cat3.png");
-        height: 30%;
-        width: 20%;
-        }
+  .cat1 {
+    content: url("../assets/images/cat2.png");
+    height: 40%;
+    margin-left: 30%;
+    margin-top: 20%;
+    width: 40%;
+    }
 }

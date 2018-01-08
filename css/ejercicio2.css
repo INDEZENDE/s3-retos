@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ /*Inician características de grid*/
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+.row:before, .row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  margin: 0px;
+  min-height: 70px;
+  padding: 23px;
+}
+.col-1 {
+  width: 8.3333%;
+}
+.col-2 {
+  width: 16.6666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333%;
+}
+.col-5 {
+  width: 41.6667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.6667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.3333%;
+}
+.col-11 {
+  width: 91.6667%;
+}
+.col-12 {
+  width: 100%;
+}
+/*Inician los estilos*/
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+h2, h3 {
+  color: #708491;
+  padding-bottom: 10px;
+}
+h4 {
+  margin-left: 5px;
+  font-size: 14px;
+}
+footer {
+  background-color: #343A40;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+a {
+  color: #708491;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+nav {
+  float: right;
+  padding: 20px;
+}
+.container {
+  background-image: url("https://dummyimage.com/1920x400/CCCCCC/969696&text=1920x400");
+  background-size: 100% 100%;
+  height: 400px;
+  width: 100%;
+}
+.navegacion {
+  background-color: #343A40;
+  color: white;
+  height: 70px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo {
+  padding-top: 60px;
+}
+.img {
+  background-image: url("https://dummyimage.com/300x200/CCCCCC/969696&text=300x200");
+  background-size: 100% 100%;
+  height: 400px;
+  width: 100%;
+}
+.imgcontent {
+  outline: 1px solid #CCCCCC;
+  padding: 20px;
+}
+.findOut {
+  background-color: #F7F7F7;
+  outline: 1px solid #CCCCCC;
+}
+.btn1 {
+  background-color:#343A40;
+  color: white;
+  padding: 20px;
+}
+.btn2 {
+  background-color:#343A40;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+#menu-icon {
+  display: hidden;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+ /*Inician características del media para los tres casos*/
+@media  (min-width: 200px) and (max-width: 900px) {  /*Caso 1. la panttalla es de una dimensión máxima de 400px*/
+.col-8, .col-4{
+  width: 100%;
+}
+.col-2 {
+  width: 40%;
+}
+.col-6 {
+  width: 50%;
+  padding: 0;
+}
+.col-5 {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.navegacion {
+  position: absolute;
+}
+#menu-icon {
+  display: inline-block;
+content: url("../assets/images/menu.png");
+}
+nav ul , nav:active ul {
+  background: #c5c5c5;
+  display: none;
+  position: absolute;
+  padding: 20px;
+  right: 10px;
+  top: 65px;
+  width: 35%;
+}
+nav:hover ul {
+  display: block;
+}
+ nav li{
+  margin: 0;
+  padding: 15px 0;
+  text-align:  center;
+  width: 100%;
+}
+
+}
